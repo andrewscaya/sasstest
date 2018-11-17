@@ -1,0 +1,21 @@
+{
+    "name": "linuxforphp\/linuxforcomposer",
+    "description": "A Composer interface to run 'Linux for PHP' Docker containers.",
+    "php-versions": [
+        "custom-7.2.10-sass-bootstrap-init"
+    ],
+    "modes": {
+        "mode2": "interactive",
+        "mode3": "tty"
+    },
+    "ports": {
+        "port1": [
+            "3000:3000"
+        ]
+    },
+    "volumes": {
+        "volume1": "${PWD}\/:\/srv\/sass_bootstrap"
+    },
+    "script": "'bash -c \"\/root\/scripts\/init.sh ; \/bin\/bash\"'",
+    "thread-safe": "false"
+}
